@@ -2,6 +2,10 @@ package entities;
 
 public class TC extends EntidadBancaria {
 
+    public TC(){
+        super();
+    }
+
     public TC(int banco, int sucursal, int claveSeguridad, int numeroProd) {
         this.banco = banco;
         this.sucursal = sucursal;
@@ -33,5 +37,13 @@ public class TC extends EntidadBancaria {
         this.claveSeguridad = claveSeguridad;
     }
 
-
+    @Override
+    public String toString() {
+        return "TC{" +
+                "banco=" + banco +
+                ", sucursal=" + sucursal +
+                ", claveSeguridad=" + claveSeguridad +
+                ", numeroProd=" + numeroProd +
+                '}';
+    }
 }//cierra CLASE

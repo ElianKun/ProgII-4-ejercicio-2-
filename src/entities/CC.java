@@ -1,7 +1,10 @@
 package entities;
 
-public class CC extends EntidadBancaria{
+public class CC extends EntidadBancaria {
 
+    public CC() {
+        super();
+    }
 
     public CC(int banco, int sucursal, int numeroProd) {
         this.banco = banco;
@@ -25,6 +28,13 @@ public class CC extends EntidadBancaria{
         this.sucursal = sucursal;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "CC{" +
+                "banco=" + banco +
+                ", sucursal=" + sucursal +
+                ", claveSeguridad=" + claveSeguridad +
+                ", numeroProd=" + numeroProd +
+                '}';
+    }
 }//cierra CLASE
